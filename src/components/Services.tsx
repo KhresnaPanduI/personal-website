@@ -58,10 +58,10 @@ export default function Services() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4">
             What I Can Build for You
           </h2>
-          <p className="text-[#a3a3a3] max-w-2xl mx-auto">
+          <p className="text-[#64748b] max-w-2xl mx-auto">
             From proof-of-concept to production-ready systems, I help businesses
             leverage AI to solve real problems.
           </p>
@@ -74,15 +74,15 @@ export default function Services() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group p-6 bg-[#171717] rounded-xl border border-white/10 hover:border-[#8b5cf6]/50 transition-all hover:-translate-y-1"
+              className="group p-6 bg-white rounded-xl border border-slate-200 hover:border-[#8b5cf6]/50 transition-all hover:-translate-y-1 shadow-sm hover:shadow-md"
             >
               <div className="w-12 h-12 bg-[#8b5cf6]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#8b5cf6]/20 transition-colors">
                 <service.icon className="text-[#8b5cf6]" size={24} />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">
+              <h3 className="text-xl font-semibold text-[#0f172a] mb-2">
                 {service.title}
               </h3>
-              <p className="text-[#a3a3a3] text-sm leading-relaxed">
+              <p className="text-[#64748b] text-sm leading-relaxed">
                 {service.description}
               </p>
             </motion.div>

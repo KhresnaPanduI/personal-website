@@ -22,10 +22,10 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4">
             Got a Problem? Let&apos;s Talk
           </h2>
-          <p className="text-[#a3a3a3] max-w-xl mx-auto mb-8">
+          <p className="text-[#64748b] max-w-xl mx-auto mb-8">
             I offer free consultations to understand your needs. No pressure,
             just a friendly chat about how AI can help your business.
           </p>
@@ -41,21 +41,21 @@ export default function Contact() {
               Chat on WhatsApp
             </a>
             <a
-              href="mailto:khresnapandu@gmail.com"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/20 hover:border-white/40 text-white font-medium rounded-lg transition-all hover:bg-white/5"
+              href="mailto:khresna.pandu10@gmail.com"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-slate-300 hover:border-slate-400 text-[#0f172a] font-medium rounded-lg transition-all hover:bg-slate-50"
             >
               <Mail size={20} />
               Send an Email
             </a>
           </div>
 
-          <p className="mt-8 text-[#a3a3a3] text-sm">
+          <p className="mt-8 text-[#64748b] text-sm">
             Prefer email?{" "}
             <a
-              href="mailto:khresnapandu@gmail.com"
-              className="text-[#a78bfa] hover:text-[#8b5cf6] transition-colors"
+              href="mailto:khresna.pandu10@gmail.com"
+              className="text-[#8b5cf6] hover:text-[#7c3aed] transition-colors"
             >
-              khresnapandu@gmail.com
+              khresna.pandu10@gmail.com
             </a>
           </p>
         </motion.div>

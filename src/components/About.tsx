@@ -26,7 +26,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-24 px-4 bg-[#171717]">
+    <section id="about" className="py-24 px-4 bg-[#f1f5f9]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
@@ -36,10 +36,10 @@ export default function About() {
           className="grid md:grid-cols-2 gap-12 items-center"
         >
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-6">
               Hey, I&apos;m Pandu
             </h2>
-            <div className="space-y-4 text-[#a3a3a3]">
+            <div className="space-y-4 text-[#64748b]">
               <p>
                 I&apos;m an AI Engineer with 4+ years of experience turning complex
                 problems into elegant, automated solutions. I specialize in
@@ -61,7 +61,7 @@ export default function About() {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-white mb-6">Tech Stack</h3>
+            <h3 className="text-xl font-semibold text-[#0f172a] mb-6">Tech Stack</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {techStack.map((tech, index) => (
                 <motion.div
@@ -69,10 +69,10 @@ export default function About() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="flex items-center gap-3 p-4 bg-[#0a0a0a] rounded-lg border border-white/10 hover:border-[#8b5cf6]/50 transition-colors"
+                  className="flex items-center gap-3 p-4 bg-white rounded-lg border border-slate-200 hover:border-[#8b5cf6]/50 transition-colors shadow-sm"
                 >
                   <tech.icon className="text-[#8b5cf6]" size={24} />
-                  <span className="text-white text-sm">{tech.name}</span>
+                  <span className="text-[#0f172a] text-sm">{tech.name}</span>
                 </motion.div>
               ))}
             </div>
