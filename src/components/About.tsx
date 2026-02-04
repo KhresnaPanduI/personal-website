@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 export default function About() {
   const ref = useRef(null);
@@ -22,9 +23,19 @@ export default function About() {
               <p className="text-[#666666] text-sm uppercase tracking-wide mb-4">
                 About
               </p>
-              <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold text-[#1a1a1a] leading-[1.1]">
+              <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold text-[#1a1a1a] leading-[1.1] mb-8">
                 Hey, I&apos;m Pandu
               </h2>
+
+              <div className="relative w-48 h-48 lg:w-64 lg:h-64 grayscale hover:grayscale-0 transition-all duration-500">
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Khresna Pandu"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 192px, 256px"
+                />
+              </div>
             </div>
 
             <div className="lg:col-span-7">

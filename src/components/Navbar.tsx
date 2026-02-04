@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
-  { name: "Impact", href: "#impact" },
+  { name: "Projects", href: "#projects" },
 ];
 
 const WHATSAPP_LINK =
