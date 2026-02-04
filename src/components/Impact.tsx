@@ -56,9 +56,9 @@ export default function Impact() {
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
-                className="p-8 lg:p-10 border-r border-b border-[#e5e5e5]"
+                className="p-6 sm:p-8 lg:p-10 border-r border-b border-[#e5e5e5] overflow-hidden"
               >
-                <div className="text-[64px] sm:text-[80px] lg:text-[96px] font-bold text-[#1a1a1a] leading-none tracking-tight">
+                <div className="text-[48px] sm:text-[56px] lg:text-[72px] font-bold text-[#1a1a1a] leading-none tracking-tight">
                   {impact.metric}
                 </div>
                 <div className="mt-4">
