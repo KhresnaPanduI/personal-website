@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { MessageCircle, Mail } from "lucide-react";
 
 const WHATSAPP_LINK =
   "https://wa.me/6281770984731?text=Hi%20Pandu,%20I'd%20like%20to%20discuss%20a%20project";
@@ -13,51 +12,56 @@ export default function Contact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="contact" className="py-24 px-4">
-      <div className="max-w-4xl mx-auto">
+    <section id="contact" className="py-24 md:py-32 px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
-          className="text-center"
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.3 }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4">
-            Got a Problem? Let&apos;s Talk
-          </h2>
-          <p className="text-[#64748b] max-w-xl mx-auto mb-8">
-            I offer free consultations to understand your needs. No pressure,
-            just a friendly chat about how AI can help your business.
-          </p>
+          <div className="max-w-3xl">
+            <p className="text-[#666666] text-sm uppercase tracking-wide mb-4">
+              Contact
+            </p>
+            <h2 className="text-[32px] sm:text-[40px] lg:text-[56px] font-bold text-[#1a1a1a] leading-[1.1] mb-8">
+              Got a problem?
+              <br />
+              <span className="text-[#e63946]">Let&apos;s talk.</span>
+            </h2>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-medium rounded-lg transition-all hover:scale-105"
-            >
-              <MessageCircle size={20} />
-              Chat on WhatsApp
-            </a>
-            <a
-              href="mailto:khresna.pandu10@gmail.com"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-slate-300 hover:border-slate-400 text-[#0f172a] font-medium rounded-lg transition-all hover:bg-slate-50"
-            >
-              <Mail size={20} />
-              Send an Email
-            </a>
+            <p className="text-[#666666] text-lg leading-relaxed mb-10 max-w-xl">
+              I offer free consultations to understand your needs. No pressure,
+              just a friendly chat about how AI can help your business.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-[#e63946] text-white text-sm font-medium uppercase tracking-wide hover:bg-[#c62f3b] transition-colors"
+              >
+                Start a Conversation
+              </a>
+              <a
+                href="mailto:khresna.pandu10@gmail.com"
+                className="inline-block px-8 py-4 border border-[#1a1a1a] text-[#1a1a1a] text-sm font-medium uppercase tracking-wide hover:bg-[#1a1a1a] hover:text-white transition-colors"
+              >
+                Send an Email
+              </a>
+            </div>
+
+            <p className="mt-10 text-[#666666] text-sm">
+              or email directly:{" "}
+              <a
+                href="mailto:khresna.pandu10@gmail.com"
+                className="text-[#1a1a1a] hover:text-[#e63946] transition-colors underline underline-offset-4"
+              >
+                khresna.pandu10@gmail.com
+              </a>
+            </p>
           </div>
-
-          <p className="mt-8 text-[#64748b] text-sm">
-            Prefer email?{" "}
-            <a
-              href="mailto:khresna.pandu10@gmail.com"
-              className="text-[#8b5cf6] hover:text-[#7c3aed] transition-colors"
-            >
-              khresna.pandu10@gmail.com
-            </a>
-          </p>
         </motion.div>
       </div>
     </section>

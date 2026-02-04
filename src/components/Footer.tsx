@@ -1,44 +1,38 @@
 "use client";
 
-import { Github, Linkedin, Mail } from "lucide-react";
-
-const socialLinks = [
+const links = [
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/khresna-pandu",
-    icon: Linkedin,
   },
   {
     name: "GitHub",
     href: "https://github.com/KhresnaPanduI",
-    icon: Github,
   },
   {
     name: "Email",
     href: "mailto:khresna.pandu10@gmail.com",
-    icon: Mail,
   },
 ];
 
 export default function Footer() {
   return (
-    <footer className="py-8 px-4 border-t border-slate-200">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-[#64748b] text-sm">
-          &copy; {new Date().getFullYear()} Khresna Pandu. All rights reserved.
+    <footer className="py-8 px-6 lg:px-8 border-t border-[#e5e5e5]">
+      <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-[#666666] text-sm">
+          &copy; {new Date().getFullYear()} Khresna Pandu
         </p>
 
-        <div className="flex items-center gap-4">
-          {socialLinks.map((link) => (
+        <div className="flex items-center gap-6">
+          {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#64748b] hover:text-[#0f172a] transition-colors"
-              aria-label={link.name}
+              className="text-[#666666] hover:text-[#1a1a1a] transition-colors text-sm"
             >
-              <link.icon size={20} />
+              {link.name}
             </a>
           ))}
         </div>
