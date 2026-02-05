@@ -27,7 +27,7 @@ export default function About() {
                 Hey, I&apos;m Pandu
               </h2>
 
-              <div className="relative w-48 h-48 lg:w-64 lg:h-64 grayscale hover:grayscale-0 transition-all duration-500">
+              <div className="relative w-48 h-48 lg:w-64 lg:h-64">
                 <Image
                   src="/images/profile.jpg"
                   alt="Khresna Pandu"
