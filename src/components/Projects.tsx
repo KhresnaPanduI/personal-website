@@ -7,8 +7,21 @@ import { useRef } from "react";
 const projects = [
   {
     number: "01",
+    title: "Sign Language Translator AI",
+    client: "SingularityNet",
+    description:
+      "Grant-winning ASL recognition system, placed 3rd out of 91 international submissions (including PhDs and industry veterans), securing a $50,000 grant for beneficial AI.",
+    metrics: [
+      "$50K grant secured",
+      "91.85% F1-score",
+      "3rd / 91 global submissions",
+    ],
+    tags: ["Deep Learning", "Computer Vision", "LSTM"],
+  },
+  {
+    number: "02",
     title: "LLM Customer Service Platform",
-    client: "Financial Services",
+    client: "Indo Premier Sekuritas",
     description:
       "End-to-end AI chatbot pipeline serving 2M+ users with sub-5 second responses, replacing human agents.",
     metrics: [
@@ -19,22 +32,22 @@ const projects = [
     tags: ["LLM", "Vector DB", "MLOps"],
   },
   {
-    number: "02",
+    number: "03",
     title: "Automated Document Processing",
-    client: "Financial Services",
+    client: "Indo Premier Sekuritas",
     description:
       "OCR system for automated ID card processing, fully automating KYC verification workflows.",
     metrics: [
       "95% time reduction",
       "Replaced 6+ FTEs",
-      "200+ daily requests",
+      "1,000+ daily requests",
     ],
     tags: ["Computer Vision", "OCR", "Automation"],
   },
   {
-    number: "03",
+    number: "04",
     title: "Face Recognition System",
-    client: "Financial Services",
+    client: "Indo Premier Sekuritas",
     description:
       "In-house face similarity detection for identity verification, replacing expensive third-party services.",
     metrics: [

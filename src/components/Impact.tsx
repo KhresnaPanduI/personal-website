@@ -8,22 +8,22 @@ const impacts = [
   {
     metric: "99%",
     label: "Faster Response",
-    description: "AI chatbot vs human support",
+    description: "Indo Premier Sekuritas chatbot",
   },
   {
     metric: "200M+",
     label: "IDR Saved",
-    description: "Face recognition attendance",
+    description: "Indo Premier Sekuritas face verification",
   },
   {
     metric: "95%",
     label: "Time Reduced",
-    description: "Automated OCR system",
+    description: "Indo Premier Sekuritas KYC automation",
   },
   {
     metric: "2M+",
     label: "Users Served",
-    description: "Trading platform",
+    description: "Indo Premier Sekuritas platform",
   },
 ];
 
