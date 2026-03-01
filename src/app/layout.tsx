@@ -13,12 +13,12 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Khresna Pandu | AI Engineer & Freelance Developer",
+  title: "Khresna Pandu | AI Engineer",
   description: "Building intelligent solutions with AI. Specializing in LLM integration, AI chatbots, computer vision, and MLOps. 4+ years of experience delivering results.",
   keywords: ["AI Engineer", "Machine Learning", "LLM", "Chatbot Development", "Computer Vision", "MLOps", "Freelance Developer"],
   authors: [{ name: "Khresna Pandu" }],
   openGraph: {
-    title: "Khresna Pandu | AI Engineer & Freelance Developer",
+    title: "Khresna Pandu | AI Engineer",
     description: "Building intelligent solutions with AI. Specializing in LLM integration, AI chatbots, computer vision, and MLOps.",
     type: "website",
   },
